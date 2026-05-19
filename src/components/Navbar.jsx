@@ -1,18 +1,42 @@
+import { Phone, MapPin } from "lucide-react";
 export default function Navbar() {
   return (
     <div className="fixed top-0 right-0 z-50 w-full h-25  bg-black py-0">
       <div className="mx-auto flex w-[95%] items-center justify-between px-6 py-1 md:py-0 md:px-12">
-        
         {/* Logo */}
-    
-          
-          <img src="/images/logo.png" alt="" className="w-[20%] md:w-[7%] p-0 m-0"/>
-        
+
+        <img
+          src="/images/logo.png"
+          alt=""
+          className="w-[20%] md:w-[7%] p-0 m-0"
+        />
 
         {/* Button */}
-        <button className="rounded-full bg-yellow-500 px-6 py-3 text-sm font-semibold text-black transition hover:bg-yellow-400">
-          Contact Us
-        </button>
+        <div className="flex flex-col  items-end">
+          <button>
+            <a
+              href="tel:+2348012345678"
+              className="flex items-center gap-1 px-4 py-2 bg-yellow-400 text-white rounded-full hover:bg-gray-800 transition"
+            >
+              <Phone size={18} />
+              Call Now
+            </a>
+          </button>
+
+          <p className="text-white italic flex items-center gap-1 font-light text-sm">
+            {/* <MapPin className="text-yellow-400" size={28} /> */}
+            {/* <span>Branch 2.0, No. 6 Odenigbo market. Ohaozara LGA ebonyi state</span>  */}
+            <a
+              href="https://www.google.com/maps?q=Branch+2.0,+No.+6+Odenigbo+market,+Ohaozara+LGA,+Ebonyi+State"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition"
+            >
+              <MapPin size={18} />
+              Our Location
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
