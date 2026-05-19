@@ -13,24 +13,30 @@ export default function Navbar() {
 
         {/* Button */}
         <div className="flex flex-col gap-1 items-end">
-          
-            <a
-              href="tel:+2348012345678"
-              className="flex items-center gap-1 px-4 py-2 bg-yellow-400 text-white rounded-full hover:bg-gray-800 transition"
-            >
-              <Phone size={18} />
-              Call Now
-            </a>
-          
+          <a
+            href="tel:+2348136495940"
+            className="  flex items-center gap-2
+                px-1 py-1 text-sm
+                md:px-4 md:py-2 md:text-base
+                bg-yellow-400 text-white
+                rounded-full
+                hover:bg-gray-800 transition"
+          >
+            <Phone size={18} />
+            Call Now
+          </a>
 
           <p className="text-white italic flex items-center gap-1 font-light text-sm">
-            {/* <MapPin className="text-yellow-400" size={28} /> */}
-            {/* <span>Branch 2.0, No. 6 Odenigbo market. Ohaozara LGA ebonyi state</span>  */}
             <a
               href="https://www.google.com/maps?q=Branch+2.0,+No.+6+Odenigbo+market,+Ohaozara+LGA,+Ebonyi+State"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-black text-white rounded-full hover:bg-gray-800 transition"
+              className=" flex items-center gap-1
+                px-1 py-1 text-[12px]
+                md:px-4 md:py-2 md:text-base
+                bg-black text-white
+                rounded-full
+                hover:bg-gray-800 transition"
             >
               <MapPin size={18} />
               Our Location

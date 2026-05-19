@@ -85,9 +85,12 @@ export default function HeroCarousel() {
                 </p>
 
                 <div className="flex flex-wrap gap-4">
+                  <a href="https://wa.me/2348136495940">
                   <button className="rounded-full bg-yellow-500 px-8 py-4 text-sm font-semibold text-black transition hover:bg-yellow-400">
                     Shop Now
+                    
                   </button>
+                  </a>
 
                   <button className="rounded-full border border-white px-8 py-4 text-sm font-semibold text-white transition hover:bg-white hover:text-black">
                     Explore More
