@@ -12,8 +12,8 @@ export default function Navbar() {
         />
 
         {/* Button */}
-        <div className="flex flex-col  items-end">
-          <button>
+        <div className="flex flex-col gap-1 items-end">
+          
             <a
               href="tel:+2348012345678"
               className="flex items-center gap-1 px-4 py-2 bg-yellow-400 text-white rounded-full hover:bg-gray-800 transition"
@@ -21,7 +21,7 @@ export default function Navbar() {
               <Phone size={18} />
               Call Now
             </a>
-          </button>
+          
 
           <p className="text-white italic flex items-center gap-1 font-light text-sm">
             {/* <MapPin className="text-yellow-400" size={28} /> */}
